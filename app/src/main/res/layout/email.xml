@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:weightSum="100"
+    android:layout_height="fill_parent"
+    android:padding="20dp">
+
+    <ScrollView android:layout_weight="30" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Email Address"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/etEmails"/>
+
+            <TextView
+                android:text="Hateful Intro"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/etIntro"/>
+
+            <TextView
+                android:text="Person's name"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/etName"/>
+
+            <TextView
+                android:text="Stupid things that this person does"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/etThings"/>
+            <TextView
+                android:text="What you want to do to this person"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/etAction"/>
+
+            <TextView
+                android:textSize="20sp"
+                android:text="Hateful outro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/etOutro"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="40"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:text="Send email"
+            android:textSize="30sp"
+            android:id="@+id/bSentEmail"
+            android:padding="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="30"
+        android:layout_height="fill_parent">
+
+        <AnalogClock
+            android:id="@+id/analogClock1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+</LinearLayout>
